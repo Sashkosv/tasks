@@ -4,8 +4,10 @@ using namespace std;
 int main ()
 {
 int buf;
-ifstream git("data.txt");
+ifstream ger("data.txt");
 git>>buf;
+if (!ger)
+cerr<<"file not open";
 cout<<hex<<buf;
 system("pause");
 return 0;
