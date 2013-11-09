@@ -5,7 +5,7 @@ int main ()
 {
 int buf;
 ifstream ger("data.txt");
-git>>buf;
+ger>>buf;
 if (!ger)
 cerr<<"file not open";
 cout<<hex<<buf;
